@@ -1,0 +1,131 @@
+/* Customize your navbar */
+/* ============================================= */
+.navbar {
+	/* background color */
+	/* background: white; */
+}
+
+.navbar-light .navbar-nav .nav-link {
+	/* Nav Link Color */
+	/* color: grey; */
+
+	/* Nav Link Size */
+	/* font-size: 18px; */
+
+	/* Nav Link Thickness */
+	/* font-weight: 600; */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	/* Color of Nav Links when hovered over */
+	/* color: red; */
+}
+
+.navbar-light .navbar-brand {
+	/* Color of my name */
+	/* color: black; */
+}
+
+/* ============================================= */
+
+/* Customize your background */
+/* ============================================= */
+body {
+	/* Image as background */
+	/* background: url(); */
+
+	/* Solid background color */
+	/* background: white; */
+}
+/* ============================================= */
+
+/* Customize your Jumbotron */
+/* ============================================= */
+.jumbotron {
+	/* Image as background */
+	/* background: url(); */
+
+	/* Solid background color */
+	/* background: ghostwhite; */
+
+	/* Transparent */
+	/* background: none; */
+}
+
+.display-4 {
+	/* Text color */
+	/* color: black; */
+
+	/* About Me size */
+	/* font-size: 3.5rem; */
+
+	/* About Me Thickness */
+	/* font-weight: 300; */
+
+	/* About Me Line Spacing */
+	/* line-height: 1.2; */
+}
+
+.lead {
+	/* Text color */
+	/* color: black; */
+}
+
+.my-4 {
+	/* Divider Line Thickness */
+	/* border-top: 1px solid; */
+}
+
+.bio-text {
+	/* Bio Text color */
+	/* color: red; */
+
+	/* Change font size */
+	/* font-size: 12px; */
+
+	/* Align text to Left */
+	/* text-align: end; */
+
+	/* Align text to center */
+	/* text-align: center; */
+}
+
+/* Project Card */
+.card {
+	/* Border Color Style and Thickness */
+	/* border: 1px solid black; */
+}
+
+.card-body {
+	/* Background of Card Body */
+	/* background: red; */
+}
+
+/* Project Title */
+.card-title {
+	/* Text Color */
+	/* color: red; */
+}
+
+/* Project Description */
+.card-text {
+	/* Text Color */
+	/* color: red; */
+}
+
+.btn-primary {
+	/* Button Color */
+	/* background: red; */
+
+	/* Button Text Color */
+	/* color: black; */
+
+	/* Button Border */
+	/* border-color: red; */
+}
+
+/* Contact Page */
+.form-container {
+	/* background color */
+	/* background: red; */
+}
