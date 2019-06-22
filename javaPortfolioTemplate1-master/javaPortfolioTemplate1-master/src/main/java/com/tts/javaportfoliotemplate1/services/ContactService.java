@@ -10,11 +10,11 @@
  public class ContactService {
 
 	 @Autowired
-   private ContactRepository contactRepo;
+	 private ContactRepository contactRepo;
 
-   public void save(Contact contact) {
-     contactRepo.save(contact);
-   }
+	 public void save(Contact contact) {
+		 contactRepo.save(contact);
+	 }
 
    
  }

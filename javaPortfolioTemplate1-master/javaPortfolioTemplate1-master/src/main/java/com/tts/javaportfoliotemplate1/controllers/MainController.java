@@ -1,7 +1,6 @@
 package com.tts.javaportfoliotemplate1.controllers;
 
 import com.tts.javaportfoliotemplate1.models.Contact;
-import com.tts.javaportfoliotemplate1.repositories.ContactRepository;
 import com.tts.javaportfoliotemplate1.services.ContactService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MainController {
-
-  @Autowired
-  private ContactRepository contactRepo;
   
   @Autowired
   private ContactService contactService;
