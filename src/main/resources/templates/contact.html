@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
+<!-- Head Fragment -->
 <head th:replace="fragments/imports :: head">
-	<title>{Your Name Here}</title>
+  <title>Your Name Here</title>
 </head>
 
 <body>
-	<!-- Navbar Fragment -->
-	<nav th:replace="fragments/navbar :: navbar"></nav>
+  <!-- Navbar Fragment -->
+  <nav th:replace="fragments/navbar :: navbar"></nav>
 
-	<div class="container mt-4 form-container">
-		<form th:action="@{/submitContact}" th:object="${contact}" method="post">
-			<div class="row m-3">
-				<div class="col">
-					<label for="firstName">First Name</label> <input type="text" class="form-control" placeholder="First name" th:field="*{firstName}">
-				</div>
-				<div class="col">
-					<label for="lastName">Last Name</label> <input type="text" class="form-control" placeholder="Last name" th:field="*{lastName}">
-				</div>
-			</div>
-			<div class="row m-3">
-				<div class="col">
-					<label for="email">Email Address</label> <input type="email" class="form-control" placeholder="Your Email" th:field="*{email}">
-				</div>
-			</div>
-			<div class="row m-3">
-				<div class="col">
-					<div class="form-group">
-						<label for="message">Message</label>
-						<textarea name="message" id="contact-message" style="height: 200px" class="form-control" th:field="*{message}"></textarea>
-					</div>
-				</div>
-			</div>
-			<div class="row m-3">
-				<div class="col">
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="checkbox" id="checkbox1" value="General Inquiry"> <label
-							class="form-check-label" for="checkbox1">General
-							Inquiry</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="checkbox" id="checkbox2" value="Job Opportunity"> <label
-							class="form-check-label" for="checkbox2">Job
-							Opportunity</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="checkbox" id="checkbox3" value="Just to say Hi"> <label
-							class="form-check-label" for="checkbox3">Just to
-							say Hi!</label>
-					</div>
-				</div>
-			</div>
-			<div class="row m-3">
-				<div class="col">
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</div>
-			</div>
-		</form>
-	</div>
+  <div class="container mt-4 form-container">
+    <form th:action="@{/thankyou}" th:object="${contact}" method="post">
+      <div class="row m-3">
+        <div class="col">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" placeholder="First name" th:field="*{firstName}">
+        </div>
+        <div class="col">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" placeholder="Last name" th:field="*{lastName}">
+        </div>
+      </div>
+      <div class="row m-3">
+        <div class="col">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" placeholder="Your Email" th:field="*{email}">
+        </div>
+      </div>
+      <div class="row m-3">
+        <div class="col">
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="contact-message" style="height: 200px" class="form-control"
+              th:field="*{message}"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row m-3">
+        <div class="col-auto my-1">
+          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Reason For Contact</label>
+          <select id="inlineFormCustomSelect" name="reason" th:field="*{reason}">
+            <option selected value="">Reason for contact</option>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Job Opportunity">Job Opportunity</option>
+            <option value="Just to say Hi!">Just to say Hi!</option>
+          </select>
+        </div>
+      </div>
+      <div class="row m-3">
+        <div class="col">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
 
-	<!-- Script Fragment -->
-	<div th:replace="fragments/imports :: script-links"></div>
+  <!-- Footer Fragment -->
+  <footer th:replace="fragments/footer :: footer"></footer>
+
+  <!-- Script Fragment -->
+  <div th:replace="fragments/imports :: script-links"></div>
 </body>
 
 </html>

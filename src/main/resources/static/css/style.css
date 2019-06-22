@@ -1,87 +1,148 @@
+/* For all the styling below 
+there are comments to describe 
+the element property being affected 
+followed by the required css code.
+
+To make adjustments to the property 
+uncomment the line below the description 
+and change the value of the property 
+to the desired value.
+
+The existing values have been defaulted (mostly 'red')
+to make it obvious when viewing the webpage 
+to show what is actually being changed 
+if you're unsure
+
+ex.
+.someCssClassOrId {
+  * Affected Property Description *
+  * css-code: assigned-value; * // to use this property uncomment this line
+}
+*/
+/* ==================================================================================================== */
+
+
 /* Customize your navbar */
 /* ============================================= */
 .navbar {
-	/* background color */
-	/* background: white; */
+	/* Background Color */
+	/* background: red; */
 }
 
 .navbar-light .navbar-nav .nav-link {
-	/* Nav Link Color */
-	/* color: grey; */
+	/* Navbar Link Text Color */
+	/* color: red; */
 
-	/* Nav Link Size */
-	/* font-size: 18px; */
+	/* Navbar Link Text Size */
+	/* font-size: 30px; */
 
-	/* Nav Link Thickness */
-	/* font-weight: 600; */
+	/* Navbar Link Text Thickness */
+	/* font-weight: 800; */
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	/* Color of Nav Links when hovered over */
+	/* Color of Nav Links When Hovered Over */
 	/* color: red; */
 }
 
 .navbar-light .navbar-brand {
-	/* Color of my name */
-	/* color: black; */
+	/* Color Of Your Name */
+	/* color: red; */
 }
 
 /* ============================================= */
 
-/* Customize your background */
+
+
+/* Customize the background of your page */
 /* ============================================= */
 body {
-	/* Image as background */
-	/* background: url(); */
+  /*
+  To Use An Image as the background 
+  save the image in the 'images' folder inside of static 
+  then add the file name after '/images/' below 
+  replacing 'pikachu.png'
+  */
+  /* background: url(/images/pikachu.png); */
 
-	/* Solid background color */
-	/* background: white; */
+  /*
+  If your image does not fit the size of the background it will repeat itself
+  use the property below to overwrite this behavior
+   */
+  /* background-repeat: no-repeat */
+
+  /* 
+  If your image is just a bit too small 
+  to cover the background of the page 
+  you can use the below property 
+  to stretch the image across the page 
+  */
+  /* background-size: cover; */
+
+	/* For a Solid background color */
+  /* background: red; */
 }
 /* ============================================= */
+
+
 
 /* Customize your Jumbotron */
 /* ============================================= */
 .jumbotron {
-	/* Image as background */
-	/* background: url(); */
+	/* For Image as background Uncomment Below */
+	/* background: url(/images/pikachu.png); */
 
 	/* Solid background color */
-	/* background: ghostwhite; */
+	/* background: red; */
 
-	/* Transparent */
+	/* To make your Jumbotron Transparent */
 	/* background: none; */
 }
 
+/* 
+These properties will affect 
+the 'About Me' Text 
+within the jumbotron 
+*/
 .display-4 {
 	/* Text color */
-	/* color: black; */
+	/* color: red; */
 
 	/* About Me size */
-	/* font-size: 3.5rem; */
+	/* font-size: 20px; */
 
 	/* About Me Thickness */
-	/* font-weight: 300; */
+	/* font-weight: 800; */
 
 	/* About Me Line Spacing */
 	/* line-height: 1.2; */
 }
 
+/* 
+This is the text just below 'About Me'
+*/
 .lead {
 	/* Text color */
-	/* color: black; */
+	/* color: red; */
 }
 
+/* 
+The Divider Line
+*/
 .my-4 {
-	/* Divider Line Thickness */
-	/* border-top: 1px solid; */
+	/* Divider Line Thickness and Color*/
+	/* border-top: 1px solid red; */
 }
 
+/* 
+The text within the bio section
+*/
 .bio-text {
 	/* Bio Text color */
 	/* color: red; */
 
 	/* Change font size */
-	/* font-size: 12px; */
+	/* font-size: 24px; */
 
 	/* Align text to Left */
 	/* text-align: end; */
@@ -89,11 +150,16 @@ body {
 	/* Align text to center */
 	/* text-align: center; */
 }
+/* ============================================= */
+
+
+/* Customize your Projects page */
+/* ============================================= */
 
 /* Project Card */
 .card {
-	/* Border Color Style and Thickness */
-	/* border: 1px solid black; */
+	/* Border Color Style and Thickness of the whole card element */
+	/* border: 1px solid red; */
 }
 
 .card-body {
@@ -113,19 +179,97 @@ body {
 	/* color: red; */
 }
 
+/* Will affect all buttons with btn-primary class on any page */
 .btn-primary {
 	/* Button Color */
 	/* background: red; */
 
 	/* Button Text Color */
-	/* color: black; */
+	/* color: red; */
 
 	/* Button Border */
 	/* border-color: red; */
 }
+/* ============================================= */
 
-/* Contact Page */
+
+
+/* Customize your Contact Page */
+/* ============================================= */
+
+/* 
+Background of the form
+*/
 .form-container {
 	/* background color */
 	/* background: red; */
+}
+
+/* Customize the input boxes of the contact form */
+.form-control {
+  /* Border Size Style and Color */
+  /* border: 1px solid red; */
+
+  /* background color of input boxes */
+  /* background-color: red; */
+
+  /* Size of input boxes */
+  /* height: 100px; */
+}
+
+/* ============================================= */
+
+/* Customize your footer */
+/* ============================================= */
+
+.footer {
+  display: flex;
+
+  /* Background Color */
+  /* background: red; */
+
+  /* Total height of footer element */
+  height: 100px;
+
+  /* Top border styling */
+  border-top: 2px solid red;
+
+  /* places inner elements horizontally */
+  justify-content: center;
+
+  /* places inner elements vertically */
+  align-items: center;
+}
+
+#footer-text {
+  /* Text Color */
+  /* color: red; */
+
+  /* Text Size */
+  /* font-size: 30px; */
+}
+
+#footer-link {
+  /* Text Color */
+  /* color: red; */
+
+  /* Text Size */
+  /* font-size: 20px; */
+}
+
+#footer-link:hover {
+  /* Color change on mouse hover */
+  /* color: red; */
+
+  /* Removes underline */
+  /* text-decoration: none; */
+}
+
+
+
+/* ============================================= */
+/* Styling for custom dropdown list on contact page */
+select {
+  border-radius: .25rem;
+  height: calc(1.5em + .75rem + 2px);
 }

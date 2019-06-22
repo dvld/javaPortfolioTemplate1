@@ -15,16 +15,18 @@ public class Contact {
 	private String firstName;
 	private String lastName;
 	private String email;
-	private String message;
+  private String message;
+  private String reason;
 
 	// constructors //
 	public Contact() {}
 
-	public Contact(String firstName, String lastName, String email, String message) {
+	public Contact(String firstName, String lastName, String email, String message, String reason) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
-		this.message = message;
+    this.message = message;
+    this.reason = reason;
 	}
 
 	// getters and setters //
@@ -40,7 +42,7 @@ public class Contact {
 		this.firstName = firstName;
 	}
 
-	public String getlastName() {
+	public String getLastName() {
 		return lastName;
 	}
 
@@ -62,5 +64,13 @@ public class Contact {
 
 	public void setMessage(String message) {
 		this.message = message;
-	}
+  }
+  
+  public String getReason() {
+    return reason;
+  }
+
+  public void setReason(String reason) {
+    this.reason = reason;
+  }
 }
