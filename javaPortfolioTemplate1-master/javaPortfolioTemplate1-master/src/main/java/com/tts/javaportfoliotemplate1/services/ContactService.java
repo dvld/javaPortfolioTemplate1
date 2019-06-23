@@ -16,5 +16,9 @@
 		 contactRepo.save(contact);
 	 }
 
+	public Contact findByEmail(String email) {
+		return contactRepo.findByEmail(email);
+	}
+
    
  }
