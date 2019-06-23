@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 public class Contact {
@@ -12,11 +14,21 @@ public class Contact {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	@NotEmpty(message = "Please provide your first name")
 	private String firstName;
+	
+	@NotEmpty(message = "Please provide your last name")
 	private String lastName;
+			
+	@Email(message = "Please provide a valid email")
+	@NotEmpty(message = "Please provide an email")
 	private String email;
-  private String message;
-  private String reason;
+	
+	@NotEmpty(message = "Please provide a message")
+	private String message;        
+	
+	@NotEmpty(message = "Please a reason")
+	private String reason;
 
 	// constructors //
 	public Contact() {}
