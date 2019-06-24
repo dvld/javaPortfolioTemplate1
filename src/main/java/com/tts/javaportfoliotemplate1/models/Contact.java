@@ -27,7 +27,7 @@ public class Contact {
 	@NotEmpty(message = "Please provide a message")
 	private String message;        
 	
-	@NotEmpty(message = "Please a reason")
+	@NotEmpty(message = "Please provide a reason for contacting")
 	private String reason;
 
 	// constructors //
